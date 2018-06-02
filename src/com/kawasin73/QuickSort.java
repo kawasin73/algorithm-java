@@ -25,7 +25,7 @@ public class QuickSort {
         quickSort(array, 0, array.length - 1);
     }
 
-    public static void quickSort(int[] array, int left, int right) {
+    private static void quickSort(int[] array, int left, int right) {
         int curleft = left;
         int curright = right;
         int pivot = array[(left + right) / 2];
@@ -53,7 +53,7 @@ public class QuickSort {
         }
     }
 
-    public static void swap(int[] array, int i, int j) {
+    private static void swap(int[] array, int i, int j) {
         int tmp = array[i];
         array[i] = array[j];
         array[j] = tmp;
